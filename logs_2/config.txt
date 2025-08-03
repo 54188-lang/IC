@@ -1,0 +1,33 @@
+-------------------------
+Hyper Parameter Settings
+-------------------------
+model_mic_num: 2
+model_ch_dim: 8
+model_enc_dim: 512
+model_feature_dim: 128
+model_win: 16
+model_layer: 8
+model_stack: 1
+model_kernel: 3
+model_num_spk: 4
+model_causal: False
+csv_train_path: /mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/baseline_train_data.csv
+csv_valid_path: /mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/baseline_valid_data.csv
+csv_test_path: /mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/development_set.csv
+dataset_path: {'chime3_new': PosixPath('chime3_small/data/audio/16kHz/isolated'), 'DNS': PosixPath('DNS_processed'), 'CSV': {'train': PosixPath('/mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/baseline_train_data.csv'), 'valid': PosixPath('/mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/baseline_valid_data.csv'), 'test': PosixPath('/mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/development_set.csv')}}
+reference_channel_idx: 0
+dns_clean_wet_use: False
+sample_rate: 16000
+fft_size: 1024
+win_size: 512
+hop_size: 64
+logdir: /mnt/g2/fuyuxiang/workspace/CCF2/IC_Conv-TasNet-main/logs_2
+dataset_name: CSV
+batch_size: 72
+train_shuffle: True
+num_epochs: 180
+learning_rate: 0.0001
+device: (0, 1, 2, 3, 4)
+out_device: 0
+num_workers: 0
+-------------------------
